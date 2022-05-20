@@ -1,0 +1,22 @@
+/* стили всего блока */
+.app_wrapper {
+
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 10px;
+
+    display: grid;
+    grid-template-rows: 82px 1fr;
+    grid-template-columns: 2fr 10fr;
+    grid-gap: 10px;
+
+    grid-template-areas:
+        'h h'
+        'n c';
+}
+
+.app_wrapper_content {
+    grid-area: c;
+    border: 1px solid green;
+    background-color: rgb(204, 144, 70);
+}

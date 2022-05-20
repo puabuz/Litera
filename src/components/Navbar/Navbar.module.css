@@ -1,0 +1,18 @@
+/* стили NAV */
+.nav_block{
+    grid-area: n;
+    border: 1px solid green;
+    background-color: rgb(204, 136, 52);
+    padding: 20px;
+}
+
+
+.item a{
+    color: white;
+    text-decoration: none;
+}
+
+.item a.active{
+    color: gold;
+}
+

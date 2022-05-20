@@ -1,0 +1,20 @@
+/* стили CONTENT */
+.content_block{
+    grid-area: c;
+    border: 1px solid green;
+    background-color: rgb(204, 144, 70);
+}
+
+/* картинка карта контент */
+.img_content{
+    object-fit: cover;
+    height: 100px;
+    width: 100%;
+}
+
+
+
+.area_style{
+    width: 500px;
+    height: 30px;
+}
