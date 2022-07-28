@@ -8,7 +8,7 @@ const Post = (props) => {
             <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Aleksandr_Solzhenitsyn_1974crop.jpg" alt="" />
             {props.message}
             <div>
-                <span>♡{props.like}</span>
+                <span>♡{props.likesCount}</span>
             </div>
         </div>
 
