@@ -5,18 +5,16 @@ import { addPostActionCreator, updateNewPostTextActionCreator } from '../../../r
 
 
 const MyPosts = (props) => {
-// console.log(props);
+
     let newPostElement = createRef();
 
-    let addPost = () => {
-        props.dispatch(addPostActionCreator());
+    let onAddPost = () => {
+        props.addPost();
     }
 
     let onPostChange = () => {
         let text = newPostElement.current.value;
-        // let action = { type: 'UPDATE-NEW-POST-TEXT', newText: text }
-        let action = updateNewPostTextActionCreator(text);
-        props.dispatch(action);
+        props.updateNewPostText(text);
     }
 
     // ВЫВОДИМ ПОСТЫ--------------------------------------------
@@ -41,7 +39,7 @@ const MyPosts = (props) => {
                         value={props.newPostText} />
                 </div>
                 <div>
-                    <button onClick={addPost}>Отправить</button>
+                    <button onClick={onAddPost}>Отправить</button>
                 </div>
             </div>
 
